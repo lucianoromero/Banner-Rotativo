@@ -1,0 +1,84 @@
+<!--- 
+# Autor: Luciano Luiz Romero 
+# https://github.com/lucianoromero
+#
+#
+-->
+
+<head>
+
+    <!--===== incluir este código no head do site ===-->
+    <link rel="stylesheet" href="css/camera.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.tooltipster.js"></script>
+
+    <script src="js/camera.js"></script>
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery('#camera_wrap').camera({
+                loader: 'pie',
+                pagination: true,
+                minHeight: '200',
+                thumbnails: true,
+                height: '40.85106382978723%',
+                caption: true,
+                navigation: true,
+                fx: 'mosaic'
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            $('.tooltip').tooltipster();
+
+        });
+    </script>
+
+    <style>
+        #slider {
+            width: 980px;
+
+
+        }
+    </style>
+</head>
+
+
+<!--===== incluir este código onde aparecerá o banner rotativo  ===-->
+
+<div id="slider">
+    <div class="camera_wrap" id="camera_wrap">
+        <div data-thumb="images/thumb.png" data-src="images/slide.jpg">
+            <div class="caption fadeFromBottom">
+                Banner 1
+            </div>
+        </div>
+        <div data-thumb="images/thumb1.jpg" data-src="images/slide1.jpg">
+            <div class="caption fadeFromBottom">
+                Banner 2
+            </div>
+        </div>
+        <div data-thumb="images/thumb2.png" data-src="images/slide2.jpg">
+            <div class="caption fadeFromBottom">
+                Banner 3
+            </div>
+        </div>
+        <div data-thumb="images/thumb3.png" data-src="images/slide3.jpg">
+            <div class="caption fadeFromBottom">
+                Banner 4
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/classie.js"></script>
+
+<script src="js/thumbnailGridEffects.js"></script>
+<!-- Fim -->
+</body>
+
+</html>
